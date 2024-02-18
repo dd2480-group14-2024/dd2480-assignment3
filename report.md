@@ -30,11 +30,11 @@ for each project, along with reason(s) why you changed to a different one.
 
 | Function                                       | Lizard | Teodor | William |
 | ---------------------------------------------- | ------ | ------ | ------- |
-| `IterImpl.readStringSlowPath`                  | 28     | 28     |         |
-| `IterImplForStreaming.readStringSlowPath`      | 27     | 27     |         |
-| `CodegenImplObjectStrict.genObjectUsingStrict` | 26     | 26     |         |
-| `GsonCompatabilityMode.createDecoder`          | 24     | 24     |         |
-| `CodegenImplNative.genReadOp`                  | 23     | 24     |         |
+| `IterImpl.readStringSlowPath`                  | 28     | 28     | 28      |
+| `IterImplForStreaming.readStringSlowPath`      | 27     | 27     | 27      |
+| `CodegenImplObjectStrict.genObjectUsingStrict` | 26     | 26     | 25      |
+| `GsonCompatabilityMode.createDecoder`          | 24     | 24     | 21      |
+| `CodegenImplNative.genReadOp`                  | 23     | 24     | 23      |
 
 2. Are the functions just complex, or also long?
 The functions are also long. Their respective lengths are 110, 104, 128, 111 and 77 lines.
