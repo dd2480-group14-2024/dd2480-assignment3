@@ -116,6 +116,11 @@ Report of old coverage: [link]
 Report of new coverage: [link]
 
 Test cases added:
+__Teodor Morfeldt Gadler__:
+* `testWhatIsNextBoolean`
+* `testWhatIsNextInteger`
+* `testWhatIsNextFloat`
+* `testWhatIsNextNull`
 
 git diff ...
 
