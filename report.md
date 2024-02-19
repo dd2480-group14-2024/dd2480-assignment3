@@ -40,10 +40,12 @@ for each project, along with reason(s) why you changed to a different one.
 The functions are also long. Their respective lengths are 110, 104, 128, 111 and 77 lines.
 
 3. What is the purpose of the functions?
-4. Are exceptions taken into account in the given measurements?
+The purpose of the functions is not documented. Overall they all seem to work with reading streams of JSon tokens in different ways.
+   
+5. Are exceptions taken into account in the given measurements?
 Try/catch blocks increase the complexity by one. Other than that, exceptions have not been taken into account. If exceptions were taken into account, the CC would increase, as each exception would be seen as another branch.
 
-5. Is the documentation clear w.r.t. all the possible outcomes?
+6. Is the documentation clear w.r.t. all the possible outcomes?
 No. The documentation is more or less non-existent.
 
 
@@ -63,14 +65,17 @@ Plan for refactoring complex code:
 | 18  | 63     | `Config::updateBindings@394-456@./src/main/java/com/jsoniter/spi/Config.java`                                |
 | 18  | 36     | `IterImplSkip::skip@19-54@./src/main/java/com/jsoniter/IterImplSkip.java`                                    |
 | 18  | 62     | `Codegen::chooseImpl@120-181@./src/main/java/com/jsoniter/Codegen.java`                                      |
-
+### `CodegenImplNative::genReadOp@195-271@./src/main/java/com/jsoniter/CodegenImplNative.java` 
+This functions features quite a bit of logic to format the string to return and catch any exceptions that may occur in that process. The complexity can be reduced by about half by refactoring this logic to a new function.
 
 
 Estimated impact of refactoring (lower CC, but other drawbacks?).
+One drawback could be that the code becomes harder to read when logic is scattered in more places. The lack of tests also increases the risk that any bugs introduced by refactoring is not caught.
 
 Carried out refactoring (optional, P+):
+`CodegenImplNative::genReadOp@195-271@./src/main/java/com/jsoniter/CodegenImplNative.java`
 
-git diff ...
+git diff...
 
 ## Coverage
 
