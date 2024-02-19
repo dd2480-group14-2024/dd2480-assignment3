@@ -41,10 +41,10 @@ The functions are also long. Their respective lengths are 110, 104, 128, 111 and
 
 3. What is the purpose of the functions?
 4. Are exceptions taken into account in the given measurements?
-Try/catch blocks increase the complexity by one. Other than that, exceptions have not been taken into account.
+Try/catch blocks increase the complexity by one. Other than that, exceptions have not been taken into account. If exceptions were taken into account, the CC would increase, as each exception would be seen as another branch.
 
 5. Is the documentation clear w.r.t. all the possible outcomes?
-No. The documentation i smore or less non-existent.
+No. The documentation is more or less non-existent.
 
 
 ## Refactoring
