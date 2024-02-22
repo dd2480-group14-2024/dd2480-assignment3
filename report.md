@@ -180,9 +180,11 @@ __William Nordwall__:
 * `testWhatIsNextNegativeLong`
 * `testWhatIsNextNull`
 
-git diff ...
-
-Number of test cases added: two per team member (P) or at least four (P+).
+__Leo Vainio__:
+* `testReadStringSlowPathEscapedb`
+* `testReadStringSlowPathEscapedn`
+* `testReadStringSlowPathEscapedf`
+* `testReadStringSlowPathEscapedr`
 
 ## Self-assessment: Way of working
 
