@@ -186,6 +186,12 @@ __Leo Vainio__:
 * `testReadStringSlowPathEscapedf`
 * `testReadStringSlowPathEscapedr`
 
+__Luna Chen__:
+* `testReadSimpleInteger`
+* `testReadFloatingPointNumber`
+* `testBufferExpansionNeeded`
+* `testNonNumericCharactersTermination`
+
 ## Self-assessment: Way of working
 
 Current state according to the Essence standard: ...
