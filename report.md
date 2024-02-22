@@ -189,8 +189,8 @@ __Leo Vainio__:
 __Luna Chen__:
 * `testReadSimpleInteger`
 * `testReadFloatingPointNumber`
-* `testBufferExpansionNeeded`
-* `testNonNumericCharactersTermination`
+* `testReadBufferExpansionNeeded`
+* `testReadNonNumericCharactersTermination`
 
 ## Self-assessment: Way of working
 
