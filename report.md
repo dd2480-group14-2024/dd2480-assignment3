@@ -81,31 +81,37 @@ git diff...
 
 ### Tools
 
-Document your experience in using a "new"/different coverage tool.
-
-How well was the tool documented? Was it possible/easy/difficult to
-integrate it with your build environment?
+In addition to our own tool we used JaCoCo to measure branch coverage on the project and on the specific methods. It was really easy to set up, just a matter of adding the plugin to the pom, then running the tests, and finally running mvn jacoco:report to generate the results in a viewable format. The tool was very well documented but we did not have to read much of it as it was so easy to integrate into the maven project.
 
 ### Your own coverage tool
 
-Show a patch (or link to a branch) that shows the instrumented code to
-gather coverage measurements.
+[Java Branch Coverage DIY](https://github.com/dd2480-group14-2024/java/tree/feature/issue-3/branch-coverage-diy)
 
-The patch is probably too long to be copied here, so please add
-the git command that is used to obtain the patch instead:
+The tool we implemented is really simple. For each function that we measured, we created a hashset that holds the id:s of the visited branches. In the functions, at each branching point we just make sure to add the id to the specific hashset. In the end, after all tests have been run the results are written to five txt files in the results/ directory.
 
-git diff ...
-
-What kinds of constructs does your tool support, and how accurate is
-its output?
+The tool supports if, else if, else, switch, for, while, ... 
 
 ### Evaluation
 
 1. How detailed is your coverage measurement?
 
+The total number of branches and the total number of visited branches is presented along with a percentage showing the branch coverage. We also print out which branches was visited by their id:s.
+
 2. What are the limitations of your own tool?
 
+Well, having to manually go through the functions and find all branches is one big limitation as its time consuming and error prone. It also means that the source code has to be changed in order to measure coverage which is ugly. Ternary operators are not handled but could always be rewritten as if else if needed very easily. 
+
 3. Are the results of your tool consistent with existing coverage tools?
+
+| Function                                       | DIY    | JaCoCo | 
+| ---------------------------------------------- | ------ | ------ | 
+| `IterImpl.readStringSlowPath`                  | 65%    | 69%    | 
+| `IterImplForStreaming.readStringSlowPath`      | 0%     | 0%     | 
+| `CodegenImplObjectStrict.genObjectUsingStrict` | 46%    | 90%    | 
+| `GsonCompatabilityMode.createDecoder`          |        |        | 
+| `CodegenImplNative.genReadOp`                  | 86%    | 91%    | 
+
+The results are somewhat consistent with existing coverage tools but not 100% as seen in the table. The results presented here are before improvements have been made to the test suite.
 
 ## Coverage improvement
 
