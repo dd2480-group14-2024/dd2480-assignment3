@@ -99,7 +99,7 @@ The total number of branches and the total number of visited branches is present
 
 2. What are the limitations of your own tool?
 
-Well, having to manually go through the functions and find all branches is one big limitation as its time consuming and error prone. It also means that the source code has to be changed in order to measure coverage which is ugly. Ternary operators are not handled but could always be rewritten as if else if needed very easily. 
+Well, having to manually go through the functions and find all branches is one big limitation as its time consuming and error prone. It also means that the source code has to be changed in order to measure coverage which is ugly. Ternary operators are not handled but could always be rewritten as if else if needed very easily. It would also be annoying if the program had to be modified or refactored in any way, this would require us to go through and insert new id:s everywhere and it would just be a mess.
 
 3. Are the results of your tool consistent with existing coverage tools?
 
