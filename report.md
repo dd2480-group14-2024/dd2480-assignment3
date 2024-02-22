@@ -197,16 +197,20 @@ __Luna Chen__:
 
 ## Self-assessment: Way of working
 
-Current state according to the Essence standard: ...
+Current state according to the Essence standard: In Place
 
 Was the self-assessment unanimous? Any doubts about certain items?
+The self-assessment was mostly unanimous. However, there could be a few doubts regarding the "Working Well" state, particularly about whether our adaptation of practices and tools suits our current context perfectly. Although we are consistent in our approach, there's room to better tailor our practices to specific project needs.
 
 How have you improved so far?
+When we first started, we didn't have basic principles we aligned on but by establishing rules to follow like java naming principles and using issue trackers we've been able to make significant progress. Initially, setting up communication channels, work distribution methods, and development protocols required deliberate effort. Over time, these elements have become second nature, facilitating smoother collaboration and task tracking. The creation and adherence to branch and commit conventions have particularly enhanced our code management efficiency and transparency. We've also been using our group chat consistently to ask questions and set up meetings.
 
 Where is potential for improvement?
+We could probably improve upon our communication even further as we only ended up meeting once synchronously for this assignment although we communicated asynchronously throughout. This would ensure we are all on the same page and reduce the number of questions asked. We also never established a leadership structure but so far it has worked well to split up tasks evenly among group members so everyone has a solid idea of their tasks for the assignment.
 
 ## Overall experience
 
 What are your main take-aways from this project? What did you learn?
+Our main take-aways from this project include understanding code complexity metrics and the importance of test coverage. We learned about cyclomatic complexity, which measures the number of linearly independent paths through a program's source code. Understanding these metrics helps in assessing the maintainability and potential testing effort required for a codebase. This project highlights the importance of achieving high test coverage to minimize bugs and improve software reliability. Tools like Lizard for complexity metrics and Jacoco for test coverage provided us with practical skills in measuring and improving code quality. The task of refactoring complex functions to reduce their complexity teaches valuable lessons in software design and architecture as well.
 
 Is there something special you want to mention here?
