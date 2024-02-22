@@ -126,6 +126,12 @@ __Teodor Morfeldt Gadler__:
 * `testWhatIsNextBoolean`
 * `testWhatIsNextInteger`
 * `testWhatIsNextFloat`
+* `testWhatIsNextArray`
+
+__William Nordwall__:
+* `testWhatIsNextInvalid`
+* `testWhatIsNextLong`
+* `testWhatIsNextNegativeLong`
 * `testWhatIsNextNull`
 
 git diff ...
