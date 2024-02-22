@@ -121,6 +121,9 @@ One drawback could be that the code becomes harder to read when logic is scatter
 Carried out refactoring (optional, P+):
 `CodegenImplNative::genReadOp@195-271@./src/main/java/com/jsoniter/CodegenImplNative.java`
 
+### `CodegenImplObjectStrict::genObjectUsingStrict@24-151@./src/main/java/com/jsoniter/CodegenImplObjectStrict.`
+This function was refactored by splitting it into two different functions, reducing the CC by about 50%. The downside of this is the same as for genReadOp, it feels a bit less readable when a function is split into two.
+
 git diff...
 
 ## Coverage
