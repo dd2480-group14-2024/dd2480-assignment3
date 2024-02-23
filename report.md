@@ -97,7 +97,8 @@ No. The documentation is more or less non-existent.
 
 ## Refactoring
 
-Plan for refactoring complex code:
+5 out of the 10 functions below needed to be refactored. An issue was created in the project management repo for each function and the group members assigned themselves to one function that they would refactor. 
+
 #### Functions that need to be refactored
 | CCN | length | location                                                                                                     |
 | --- | ------ | ------------------------------------------------------------------------------------------------------------ |
@@ -124,8 +125,13 @@ Carried out refactoring (optional, P+):
 ### `CodegenImplObjectStrict::genObjectUsingStrict@24-151@./src/main/java/com/jsoniter/CodegenImplObjectStrict.`
 This function was refactored by splitting it into two different functions, reducing the CC by about 50%. The downside of this is the same as for genReadOp, it feels a bit less readable when a function is split into two.
 
-git diff...
+### `IterImplForStreaming::readNumber@571-620@./src/main/java/com/jsoniter/IterImplForStreaming.java`
+**LUNA**
 
+### `Parsed::parse@138-194@./src/main/java/com/jsoniter/spi/OmitValue.java`
+**JODI**
+### `IterImpl::readStringSlowPath@217-326@./src/main/java/com/jsoniter/IterImpl.java`
+**LEO**
 ## Coverage
 
 ### Tools
@@ -152,13 +158,13 @@ Well, having to manually go through the functions and find all branches is one b
 
 3. Are the results of your tool consistent with existing coverage tools?
 
-| Function                                       | DIY    | JaCoCo | 
-| ---------------------------------------------- | ------ | ------ | 
-| `IterImpl.readStringSlowPath`                  | 65%    | 69%    | 
-| `IterImplForStreaming.readStringSlowPath`      | 0%     | 0%     | 
-| `CodegenImplObjectStrict.genObjectUsingStrict` | 46%    | 90%    | 
-| `GsonCompatabilityMode.createDecoder`          |        |        | 
-| `CodegenImplNative.genReadOp`                  | 86%    | 91%    | 
+| Function                                       | DIY | JaCoCo |
+| ---------------------------------------------- | --- | ------ |
+| `IterImpl.readStringSlowPath`                  | 65% | 69%    |
+| `IterImplForStreaming.readStringSlowPath`      | 0%  | 0%     |
+| `CodegenImplObjectStrict.genObjectUsingStrict` | 46% | 90%    |
+| `GsonCompatabilityMode.createDecoder`          |     |        |
+| `CodegenImplNative.genReadOp`                  | 86% | 91%    |
 
 The results are somewhat consistent with existing coverage tools but not 100% as seen in the table. The results presented here are before improvements have been made to the test suite.
 
@@ -194,6 +200,9 @@ __Luna Chen__:
 * `testReadFloatingPointNumber`
 * `testReadBufferExpansionNeeded`
 * `testReadNonNumericCharactersTermination`
+
+__Jodi:__
+ADD TEST CASES
 
 ## Self-assessment: Way of working
 
