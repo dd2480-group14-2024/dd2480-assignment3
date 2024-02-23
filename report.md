@@ -173,7 +173,13 @@ The results are somewhat consistent with existing coverage tools but not 100%.
 
 ## Coverage improvement
 
-Test cases added:
+The total coverage results for the entire project are presented first and then the before and after of the specific functions that we have implemented tests for.
+
+Total branch coverage before on the entire project:
+
+Total branch coverage after on the entire project:
+
+### Test cases added:
 
 __Teodor Morfeldt Gadler__:[Link to tests](https://github.com/dd2480-group14-2024/java/blob/feat/add-test-cases/src/test/java/com/jsoniter/TestWhatIsNext.java)
 * `testWhatIsNextBoolean`
@@ -217,12 +223,16 @@ Branch coverage before: 77%
 
 Branch coverage after: 80%
 
-__Jodi:__
+__Jodi:__: [Link to tests](https://github.com/dd2480-group14-2024/java/blob/feat/add-test-cases/src/test/java/com/jsoniter/TestOmitValue.java)
 * `test_parseBooleanTypeWithTrueString`
 * `test_parseBooleanTypeWithFalseString`
 * `test_parseIntegerTypeWithZeroString`
 * `test_parseFloatTypeWithZeroString`
 * `parseDoubleTypeWithZeroString`
+
+Branch coverage before: 92%
+
+Branch coverage after: 92%
 
 ## Self-assessment: Way of working
 
