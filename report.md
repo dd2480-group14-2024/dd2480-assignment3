@@ -219,6 +219,8 @@ Branch coverage before: 77%
 
 Branch coverage after: 80%
 
+The test suite didn't cover all the possible cases as it just had a test that tested the limits of the double data type so I added a few tests that test floating point numbers with decimal points, long numbers that exceed the buffer size, and numbers with non-numeric characters.
+
 __Jodi:__: [Link to tests](https://github.com/dd2480-group14-2024/java/blob/feat/add-test-cases/src/test/java/com/jsoniter/TestOmitValue.java)
 * `test_parseBooleanTypeWithTrueString`
 * `test_parseBooleanTypeWithFalseString`
