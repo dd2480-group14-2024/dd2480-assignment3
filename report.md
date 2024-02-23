@@ -136,6 +136,13 @@ Length and complexity of total code could not be decreased by large amount due t
 
 ### `IterImpl::readStringSlowPath@217-326@./src/main/java/com/jsoniter/IterImpl.java`
 **LEO**
+
+[Link to old](https://github.com/dd2480-group14-2024/java/blob/b3282180af992e81ab041cf69ab51d88ce2a3f7f/src/main/java/com/jsoniter/IterImpl.java#L217)
+
+[Link to refactored](https://github.com/dd2480-group14-2024/java/blob/master/src/main/java/com/jsoniter/IterImpl.java#L217)
+
+The function was refactored by moving the logic for handling escaped characters to another function called handleEscapeCharacter. The changes can be seen by clicking the links above. The change reduces the CC by around 50%.
+
 ## Coverage
 
 ### Tools
@@ -200,7 +207,7 @@ Branch coverage after: 50%
 
 Before adding these tests, the test suite did not cover all the possible escape characters in the `IterImpl.readStringSlowPath` function so I added a few tests to see that the function handles different escape characters in a correct way. 
 
-__Luna Chen__:
+__Luna Chen__: [Link to tests]()
 * `testReadSimpleInteger`
 * `testReadFloatingPointNumber`
 * `testReadBufferExpansionNeeded`
