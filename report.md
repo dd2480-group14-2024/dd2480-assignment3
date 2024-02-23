@@ -6,11 +6,11 @@ has to be delivered in a standard, cross-platform format.
 
 ## Project
 
-Name:
+Name: Json Iterator
 
-URL:
+URL: https://github.com/dd2480-group14-2024/java
 
-One or two sentences describing it
+The project contains a fast and efficient JSON parser and an api with some useful functions. 
 
 ## Onboarding experience
 
