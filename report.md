@@ -201,6 +201,8 @@ Branch coverage before: n/a
 
 Branch coverage after: n/a
 
+As the WhatIsNext method doesn't have any branches, it shows that the coverage isn't available
+
 __Leo Vainio__: [Link to tests](https://github.com/dd2480-group14-2024/java/blob/feat/add-test-cases/src/test/java/com/jsoniter/TestIterImpl.java)
 * `testReadStringSlowPathEscapedb`
 * `testReadStringSlowPathEscapedn`
