@@ -129,14 +129,10 @@ This function was refactored by splitting it into two different functions, reduc
 This function was refactored by splitting it into multiple functions which reduced the complexity by about half. The drawback is that it can make the code harder to read as one would have to go to the helper functions to understand all the logic which could lead to more confusion because of context switching.
 
 ### `Parsed::parse@138-194@./src/main/java/com/jsoniter/spi/OmitValue.java`
-**JODIE**
-__Jodie__:
 Function split into 3 separate functions to decrease CC of parse by 70%. Split into: parsePrimitive (to handle cases for primitive classes), parseWrapper(handle cases for non-primitive) and parse (logic for calling the above functions). Had all cases return defaultType as a variable, to be returned from parse in one line, rather than returning for each case.
 Length and complexity of total code could not be decreased by large amount due to nature of code - many cases to consider, as each class has its own logic to handle.
 
 ### `IterImpl::readStringSlowPath@217-326@./src/main/java/com/jsoniter/IterImpl.java`
-**LEO**
-
 [Link to old](https://github.com/dd2480-group14-2024/java/blob/b3282180af992e81ab041cf69ab51d88ce2a3f7f/src/main/java/com/jsoniter/IterImpl.java#L217)
 
 [Link to refactored](https://github.com/dd2480-group14-2024/java/blob/master/src/main/java/com/jsoniter/IterImpl.java#L217)
