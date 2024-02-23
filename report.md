@@ -162,42 +162,43 @@ Well, having to manually go through the functions and find all branches is one b
 
 3. Are the results of your tool consistent with existing coverage tools?
 
-| Function                                       | DIY | JaCoCo |
-| ---------------------------------------------- | --- | ------ |
-| `IterImpl.readStringSlowPath`                  | 65% | 69%    |
-| `IterImplForStreaming.readStringSlowPath`      | 0%  | 0%     |
-| `CodegenImplObjectStrict.genObjectUsingStrict` | 46% | 90%    |
-| `GsonCompatabilityMode.createDecoder`          |     |        |
-| `CodegenImplNative.genReadOp`                  | 86% | 91%    |
-
-The results are somewhat consistent with existing coverage tools but not 100% as seen in the table. The results presented here are before improvements have been made to the test suite.
+The results are somewhat consistent with existing coverage tools but not 100%.
 
 ## Coverage improvement
 
-Show the comments that describe the requirements for the coverage.
-
-Report of old coverage: [link]
-
-Report of new coverage: [link]
-
 Test cases added:
-__Teodor Morfeldt Gadler__:
+
+__Teodor Morfeldt Gadler__:[Link to tests](https://github.com/dd2480-group14-2024/java/blob/feat/add-test-cases/src/test/java/com/jsoniter/TestWhatIsNext.java)
 * `testWhatIsNextBoolean`
 * `testWhatIsNextInteger`
 * `testWhatIsNextFloat`
 * `testWhatIsNextArray`
 
-__William Nordwall__:
+Branch coverage before: n/a
+
+Branch coverage after: n/a
+
+__William Nordwall__:[Link to tests](https://github.com/dd2480-group14-2024/java/blob/feat/add-test-cases/src/test/java/com/jsoniter/TestWhatIsNext.java)
 * `testWhatIsNextInvalid`
 * `testWhatIsNextLong`
 * `testWhatIsNextNegativeLong`
 * `testWhatIsNextNull`
 
-__Leo Vainio__:
+Branch coverage before: n/a
+
+Branch coverage after: n/a
+
+__Leo Vainio__: [Link to tests](https://github.com/dd2480-group14-2024/java/blob/feat/add-test-cases/src/test/java/com/jsoniter/TestIterImpl.java)
 * `testReadStringSlowPathEscapedb`
 * `testReadStringSlowPathEscapedn`
 * `testReadStringSlowPathEscapedf`
 * `testReadStringSlowPathEscapedr`
+
+Branch coverage before: 40%
+
+Branch coverage after: 50%
+
+Before adding these tests, the test suite did not cover all the possible escape characters in the `IterImpl.readStringSlowPath` function so I added a few tests to see that the function handles different escape characters in a correct way. 
 
 __Luna Chen__:
 * `testReadSimpleInteger`
