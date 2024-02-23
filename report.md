@@ -231,4 +231,4 @@ We could probably improve upon our communication even further as we only ended u
 What are your main take-aways from this project? What did you learn?
 Our main take-aways from this project include understanding code complexity metrics and the importance of test coverage. We learned about cyclomatic complexity, which measures the number of linearly independent paths through a program's source code. Understanding these metrics helps in assessing the maintainability and potential testing effort required for a codebase. This project highlights the importance of achieving high test coverage to minimize bugs and improve software reliability. Tools like Lizard for complexity metrics and Jacoco for test coverage provided us with practical skills in measuring and improving code quality. The task of refactoring complex functions to reduce their complexity teaches valuable lessons in software design and architecture as well.
 
-Is there something special you want to mention here?
+
