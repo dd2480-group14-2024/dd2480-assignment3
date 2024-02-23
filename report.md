@@ -175,9 +175,9 @@ The results are somewhat consistent with existing coverage tools but not 100%.
 
 The total coverage results for the entire project are presented first and then the before and after of the specific functions that we have implemented tests for.
 
-Total branch coverage before on the entire project:
+Total branch coverage before on the entire project: 59%
 
-Total branch coverage after on the entire project:
+Total branch coverage after on the entire project: 60%
 
 ### Test cases added:
 
