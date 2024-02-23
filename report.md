@@ -207,11 +207,15 @@ Branch coverage after: 50%
 
 Before adding these tests, the test suite did not cover all the possible escape characters in the `IterImpl.readStringSlowPath` function so I added a few tests to see that the function handles different escape characters in a correct way. 
 
-__Luna Chen__: [Link to tests]()
+__Luna Chen__: [Link to tests](https://github.com/dd2480-group14-2024/java/blob/feat/add-test-cases/src/test/java/com/jsoniter/TestIterImplStreamingNum.java)
 * `testReadSimpleInteger`
 * `testReadFloatingPointNumber`
 * `testReadBufferExpansionNeeded`
 * `testReadNonNumericCharactersTermination`
+
+Branch coverage before: 77%
+
+Branch coverage after: 80%
 
 __Jodi:__
 * `test_parseBooleanTypeWithTrueString`
