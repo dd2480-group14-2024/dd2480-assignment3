@@ -112,15 +112,11 @@ No. The documentation is more or less non-existent.
 | 18  | 63     | `Config::updateBindings@394-456@./src/main/java/com/jsoniter/spi/Config.java`                                |
 | 18  | 36     | `IterImplSkip::skip@19-54@./src/main/java/com/jsoniter/IterImplSkip.java`                                    |
 | 18  | 62     | `Codegen::chooseImpl@120-181@./src/main/java/com/jsoniter/Codegen.java`                                      |
+## Carried out refactoring (P+)
 ### `CodegenImplNative::genReadOp@195-271@./src/main/java/com/jsoniter/CodegenImplNative.java` 
 This functions features quite a bit of logic to format the string to return and catch any exceptions that may occur in that process. The complexity can be reduced by about half by refactoring this logic to a new function.
 
-
-Estimated impact of refactoring (lower CC, but other drawbacks?).
 One drawback could be that the code becomes harder to read when logic is scattered in more places. The lack of tests also increases the risk that any bugs introduced by refactoring is not caught.
-
-Carried out refactoring (optional, P+):
-`CodegenImplNative::genReadOp@195-271@./src/main/java/com/jsoniter/CodegenImplNative.java`
 
 ### `CodegenImplObjectStrict::genObjectUsingStrict@24-151@./src/main/java/com/jsoniter/CodegenImplObjectStrict.`
 This function was refactored by splitting it into two different functions, reducing the CC by about 50%. The downside of this is the same as for genReadOp, it feels a bit less readable when a function is split into two.
