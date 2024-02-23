@@ -126,7 +126,7 @@ Carried out refactoring (optional, P+):
 This function was refactored by splitting it into two different functions, reducing the CC by about 50%. The downside of this is the same as for genReadOp, it feels a bit less readable when a function is split into two.
 
 ### `IterImplForStreaming::readNumber@571-620@./src/main/java/com/jsoniter/IterImplForStreaming.java`
-**LUNA**
+This function was refactored by splitting it into multiple functions which reduced the complexity by about half. The drawback is that it can make the code harder to read as one would have to go to the helper functions to understand all the logic which could lead to more confusion because of context switching.
 
 ### `Parsed::parse@138-194@./src/main/java/com/jsoniter/spi/OmitValue.java`
 **JODI**
